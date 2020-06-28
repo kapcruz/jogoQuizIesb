@@ -39,9 +39,11 @@ public class temaCategoria : MonoBehaviour
     public void selecionaCategoria(int index)
     {
         idCategoria = index;
+        //Grava o id da categoria
+        PlayerPrefs.SetInt("idCategoria", idCategoria);
         nome_categoria.text = nomeTema[index];
 
-            //int notaFinal = 0;
+            int notaFinal = 0;
             int acertos = 0;
 
         infoRecorde.text = "Recorde: Você acertou  " + acertos.ToString() + " de " + numeroQuestoes.ToString() +" ";
@@ -57,4 +59,5 @@ public class temaCategoria : MonoBehaviour
         SceneManager.LoadScene("categoria"+idCategoria.ToString());
 
     }
+
 }

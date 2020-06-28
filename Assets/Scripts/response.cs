@@ -14,7 +14,6 @@ public class response : MonoBehaviour
     public Text respostaA;
     public Text respostaB;
     public Text respostaC;
-    public Text respostaD;
     public Text infoResposta;
 
     // array que guarda todas as perguntas, respostas e acertos 
@@ -22,7 +21,6 @@ public class response : MonoBehaviour
     public string[] questaoA;
     public string[] questaoB;
     public string[] questaoC;
-    public string[] questaoD;
     public string[] acertos;
 
     private int idPergunta;
@@ -73,15 +71,6 @@ public class response : MonoBehaviour
             }
 
         }
-        else if(questao == "D")
-        {
-
-            if (questaoD[idPergunta] == acertos[idPergunta])
-            {
-                idAcerto += 1;
-            }
-
-        }
 
         proximaQuestao();
     }
@@ -98,7 +87,6 @@ public class response : MonoBehaviour
             respostaA.text = questaoA[idPergunta];
             respostaB.text = questaoB[idPergunta];
             respostaC.text = questaoC[idPergunta];
-            respostaD.text = questaoD[idPergunta];
 
             infoResposta.text = "Respondendo " + (idCategoria + 1).ToString() + " de " + idQuestao.ToString() + " questões";
         }
