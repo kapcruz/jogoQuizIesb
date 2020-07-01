@@ -42,9 +42,7 @@ public class temaCategoria : MonoBehaviour
         //Grava o id da categoria
         PlayerPrefs.SetInt("idCategoria", idCategoria);
         nome_categoria.text = nomeTema[index];
-
-            int notaFinal = 0;
-            int acertos = 0;
+        int acertos = PlayerPrefs.GetInt("acertosTemp" + idCategoria.ToString());
 
         infoRecorde.text = "Recorde: Você acertou  " + acertos.ToString() + " de " + numeroQuestoes.ToString() +" ";
         infoCategoria.SetActive(true);
