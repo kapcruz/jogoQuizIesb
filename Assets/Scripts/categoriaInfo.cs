@@ -18,5 +18,35 @@ public class categoriaInfo : MonoBehaviour
         trofeu2.SetActive(false);
         trofeu3.SetActive(false);
 
+        notaFinal = PlayerPrefs.GetInt("notaFinalTemp" + idCategoria.ToString());
+
+
+        if (notaFinal == 0)
+        {
+            trofeu1.SetActive(false);
+            trofeu2.SetActive(false);
+            trofeu3.SetActive(false);
+        }
+        if (notaFinal == 10)
+        {
+            trofeu1.SetActive(true);
+            trofeu2.SetActive(true);
+            trofeu3.SetActive(true);
+        }
+        if (notaFinal > 3 && notaFinal < 10)
+        {
+            trofeu1.SetActive(true);
+            trofeu2.SetActive(true);
+            trofeu3.SetActive(false);
+
+        }
+
+        if (notaFinal <= 3 && notaFinal > 0)
+        {
+            trofeu1.SetActive(true);
+            trofeu2.SetActive(false);
+            trofeu3.SetActive(false);
+        }
+
     }
 }
