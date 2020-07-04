@@ -41,7 +41,7 @@ public class response : MonoBehaviour
         respostaB.text = questaoB[idPergunta];
         respostaC.text = questaoC[idPergunta];
 
-        infoResposta.text = "Respondendo " + (idCategoria + 1).ToString() + " de " + idQuestao.ToString() + " questões";
+        infoResposta.text = "Respondendo " + (idCategoria).ToString() + " de " + idQuestao.ToString() + " questões";
 
     }
 

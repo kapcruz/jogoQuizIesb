@@ -53,7 +53,6 @@ public class temaCategoria : MonoBehaviour
     // Update is called once per frame
     public void carregaCategoriaJogar()
     {
-
         SceneManager.LoadScene("categoria"+idCategoria.ToString());
 
     }
