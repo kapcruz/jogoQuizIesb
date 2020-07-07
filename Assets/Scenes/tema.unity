@@ -821,7 +821,7 @@ MonoBehaviour:
   - Selecione uma categoria para jogar
   - IESB
   - Sonic
-  numeroQuestoes: 5
+  numerodeQuestoes: 2
   idCategoria: 0
 --- !u!1 &519420028
 GameObject:

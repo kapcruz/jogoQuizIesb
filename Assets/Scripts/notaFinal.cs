@@ -19,6 +19,7 @@ public class notaFinal : MonoBehaviour
 
     private int notaTotal;
     private int idAcerto;
+    private int numerodeQuestoes;
 
 
     void Start()
@@ -26,10 +27,11 @@ public class notaFinal : MonoBehaviour
         idCategoria = PlayerPrefs.GetInt("idCategoria");
         notaTotal = PlayerPrefs.GetInt("notaFinalTemp"+idCategoria.ToString());
         idAcerto = PlayerPrefs.GetInt("acertosTemp"+idCategoria.ToString());
+        numerodeQuestoes = PlayerPrefs.GetInt("numerodeQuestoes" + idCategoria.ToString());
 
 
         txtNota.text = notaTotal.ToString();
-        txtInfoCategoria.text = "Voce acertou " + idAcerto.ToString() + " de 10 perguntas";
+        txtInfoCategoria.text = "Voce acertou " + idAcerto.ToString() + " de  " + numerodeQuestoes.ToString() + " perguntas";
 
 
         if (notaTotal == 0)

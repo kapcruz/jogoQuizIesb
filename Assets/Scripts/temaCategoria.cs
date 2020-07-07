@@ -15,7 +15,7 @@ public class temaCategoria : MonoBehaviour
 
     public string[] nomeTema;
 
-    public int numeroQuestoes;
+    public int numerodeQuestoes;
     public int idCategoria;
 
 
@@ -24,7 +24,7 @@ public class temaCategoria : MonoBehaviour
     {
         //inicia o nome do tema como 0 para mensagem padrao
         idCategoria = 0;
-        //Seta p texto que estiver no elemento 0
+        //Seta o texto que estiver no elemento 0
         nome_categoria.text = nomeTema[idCategoria];
         //Info recorde como vazio
         infoRecorde.text = "Recorde: ";
@@ -43,8 +43,9 @@ public class temaCategoria : MonoBehaviour
         PlayerPrefs.SetInt("idCategoria", idCategoria);
         nome_categoria.text = nomeTema[index];
         int acertos = PlayerPrefs.GetInt("acertosTemp" + idCategoria.ToString());
+        numerodeQuestoes = PlayerPrefs.GetInt("numerodeQuestoes" + idCategoria.ToString());
 
-        infoRecorde.text = "Recorde: Você acertou  " + acertos.ToString() + " de " + numeroQuestoes.ToString() +" ";
+        infoRecorde.text = "Recorde: Você acertou  " + acertos.ToString() + " de " + numerodeQuestoes.ToString() + " ";
         infoCategoria.SetActive(true);
         botaoplay.interactable = true;
 
@@ -53,6 +54,7 @@ public class temaCategoria : MonoBehaviour
     // Update is called once per frame
     public void carregaCategoriaJogar()
     {
+
         SceneManager.LoadScene("categoria"+idCategoria.ToString());
 
     }

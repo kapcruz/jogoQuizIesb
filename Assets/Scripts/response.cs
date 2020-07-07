@@ -34,6 +34,7 @@ public class response : MonoBehaviour
     {
         idCategoria = PlayerPrefs.GetInt("idCategoria");
         idPergunta = 0;
+        PlayerPrefs.SetInt("idPergunta", idPergunta);
         idQuestao = perguntas.Length;
 
         pergunta.text = perguntas[idPergunta];
@@ -41,7 +42,7 @@ public class response : MonoBehaviour
         respostaB.text = questaoB[idPergunta];
         respostaC.text = questaoC[idPergunta];
 
-        infoResposta.text = "Respondendo " + (idCategoria).ToString() + " de " + idQuestao.ToString() + " questões";
+        infoResposta.text = "Respondendo " + (idPergunta + 1).ToString() + " de " + idQuestao.ToString() + " questões";
 
     }
 
@@ -88,7 +89,7 @@ public class response : MonoBehaviour
             respostaB.text = questaoB[idPergunta];
             respostaC.text = questaoC[idPergunta];
 
-            infoResposta.text = "Respondendo " + (idCategoria + 1).ToString() + " de " + idQuestao.ToString() + " questões";
+            infoResposta.text = "Respondendo " + (idPergunta + 1).ToString() + " de " + idQuestao.ToString() + " questões";
         }
         else
         {
@@ -103,6 +104,7 @@ public class response : MonoBehaviour
 
             PlayerPrefs.SetInt("notaFinalTemp" + idCategoria.ToString(), notaFinal);
             PlayerPrefs.SetInt("acertosTemp" + idCategoria.ToString(), (int)idAcerto);
+            PlayerPrefs.SetInt("numerodeQuestoes" + idCategoria.ToString(), (int)idQuestao);
 
             SceneManager.LoadScene("nota");
         }
