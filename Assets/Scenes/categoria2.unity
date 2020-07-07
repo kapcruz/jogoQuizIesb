@@ -899,18 +899,28 @@ MonoBehaviour:
   perguntas:
   - "Quais s\xE3o os 2 Melhores Amigos do Sonic?  "
   - "Qual foi o Ano do Primeiro Jogo Lan\xE7ando do Sonic? (Sonic the Hedgehog) ?"
+  - "Em que ano lan\xE7ou sonic forces? "
+  - "Em que ano lan\xE7ou o primeiro filme do sonic ?"
   questaoA:
   - Tails & Knuckles
   - 1981
+  - 2017
+  - 1996
   questaoB:
   - Shadow & Rouge
   - 1996
+  - 2018
+  - 1986
   questaoC:
   - Vector & Espio
+  - 1991
+  - 2019
   - 1991
   acertos:
   - Tails & Knuckles
   - 1991
+  - 2017
+  - 1996
 --- !u!4 &1009552626
 Transform:
   m_ObjectHideFlags: 0

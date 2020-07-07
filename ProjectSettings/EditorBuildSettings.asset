@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/categoria2.unity
     guid: b03c8bdf729c2e34f9d28e382c7c66f0
   - enabled: 1
+    path: Assets/Scenes/categoria3.unity
+    guid: 9f8edb1bbcff2e648b9fd13c3a25310a
+  - enabled: 1
     path: Assets/Scenes/nota.unity
     guid: 9731a2911aa6b5649b9f199c05316754
   m_configObjects: {}
