@@ -1370,7 +1370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bb6474f6afa8a7428a9da0086513fe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idCategoria: 2
+  idCategoria: 3
   trofeu1: {fileID: 1727718083}
   trofeu2: {fileID: 1989547910}
   trofeu3: {fileID: 458969072}
